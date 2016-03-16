@@ -1,0 +1,56 @@
+<html>
+  <head>
+    <title>Ro Sham Bo!</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
+    <link rel="stylesheet" type"text/css" href="stylesheets/styles.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  </head>
+  <body>
+    <div class="container">
+      <div class="center"><h1>Ro Sham Bo!</h1></div>
+      <div class="row">
+          <div class="center">
+            <div class="waves-effect waves-light btn red" onclick="cleare()">clear</div>
+        </div>
+      </div>
+        <div class="row">
+          <img class="col s4 hoverable" onclick="userPick('rock')" src="images/rock-hand.png">
+          <img class="col s4 hoverable" onclick="userPick('paper')" src="images/paper.jpeg">
+          <img class="col s4 hoverable" onclick="userPick('scissors')" src="images/scissors.png">
+        </div>
+        <table class="centered">
+          <thead>
+            <tr>
+              <th>You Picked</th>
+              <th>Larry Picked</th>
+            <tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="showUserPick"></td>
+              <td id="showCompPick"></td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="centered">
+          <thead>
+            <tr>
+                <th>Wins</th>
+                <th>Loses</th>
+                <th>Draws</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td id="userWins"></td>
+              <td id="compWins"></td>
+              <td id="draw"></td>
+            </tr>
+          </tbody>
+        </table>
+    </div>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/js/materialize.min.js"></script>
+    <script type="text/javascript" src="javascripts/main.js"></script>
+  </body>
+</html>
